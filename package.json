@@ -1,31 +1,44 @@
 {
   "name": "react-demo",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "练习reac+antd+mobx+webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config build/webpack.dll.config.js && webpack --config build/webpack.dev.config.js",
+    "bulid": "webpack --config build/webpack.dll.config.js && webpack --config build/webpack.build.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuandaishi/reac-demo.git"
+  },
+  "author": "yuands",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuandaishi/reac-demo/issues"
+  },
+  "homepage": "https://github.com/yuandaishi/reac-demo#readme",
   "dependencies": {
-    "antd": "^3.16.5",
+    "@babel/polyfill": "^7.4.4",
+    "antd": "^3.16.6",
     "mobx": "^5.9.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-router-dom": "^5.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "babel-preset-mobx": "^2.0.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
   }
 }
